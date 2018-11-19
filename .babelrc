@@ -1,0 +1,29 @@
+{
+  "env": {
+    "development": {
+      "presets": ["next/babel"],
+      "plugins": [
+        "inline-react-svg",
+        "react-element-info", 
+        ["babel-plugin-styled-components", {
+          "ssr" : true,
+          "displayName": false
+          }
+        ]
+      ]
+    },
+    "production": {
+      "presets": ["next/babel"],
+      "plugins": [
+        "transform-remove-console",
+        "inline-react-svg",
+        [
+          "babel-plugin-styled-components", {
+            "ssr" : true,
+            "displayName": false
+          }
+        ]
+      ]
+    }
+  }
+}

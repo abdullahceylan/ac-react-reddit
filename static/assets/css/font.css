@@ -1,0 +1,216 @@
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 100;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-ace639d0d6c57c22d2735e84bce4d1e571ecae97.eot");
+  src: url("../font/ttnorms-968d2690723ea1ec93caf63ae0fd050a3f8c91ed.woff2") format("woff2"), 
+    url("../font/ttnorms-8e7e41c29d1c85358c05275cf6a9dc6930c0d7d4.woff") format("woff"), 
+    url("../font/ttnorms-ace639d0d6c57c22d2735e84bce4d1e571ecae97.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-27968141d866485de42787a9c8571a24bfa1db50.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 200;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-eac10d9739f24351964083b3154684d61e4e96eb.eot");
+  src: url("../font/ttnorms-a15123e37001b7db7c42a0f4bda9fd4819fc505d.woff2") format("woff2"), 
+    url("../font/ttnorms-51e8d4f93e45d264ddb7bdcff6365a30a057ca66.woff") format("woff"), 
+    url("../font/ttnorms-eac10d9739f24351964083b3154684d61e4e96eb.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-3dd15b353a6dd35fe38b79c48190c4c9333910a5.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 300;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-cb094f1d0939ef3ee7d68d4ea012531edaa2b0a2.eot");
+  src: url("../font/ttnorms-5d421882f65971e47d00941cda7bbb238352796d.woff2") format("woff2"), 
+    url("../font/ttnorms-2e37a417b0655b664579ad881e712b8b1fb7b130.woff") format("woff"), 
+    url("../font/ttnorms-cb094f1d0939ef3ee7d68d4ea012531edaa2b0a2.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-7b2daa977ae20ac723ad17cf7b3f13f026f6b72c.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 400;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-ac2f0b045f6431268e78082accbec9b993357bc0.eot");
+  src: url("../font/ttnorms-a7be99707389878fc20818e774db3021430da497.woff2") format("woff2"), 
+    url("../font/ttnorms-428be4c1a112b8686ec0f4590233063a7a526b67.woff") format("woff"), 
+    url("../font/ttnorms-ac2f0b045f6431268e78082accbec9b993357bc0.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-3d3d40f18113116024f0ca2b0b08e4b45dc4e89c.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 500;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-414cf0d5b6d3f19119edb1040e1ad8b330d2b342.eot");
+  src: url("../font/ttnorms-0c8f68dabb5866e543060e7daafa13ab16a33ded.woff2") format("woff2"), 
+    url("../font/ttnorms-1f3c4f83c18669c20a02671c59e75f36dc5d7f8a.woff") format("woff"), 
+    url("../font/ttnorms-414cf0d5b6d3f19119edb1040e1ad8b330d2b342.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-327bc134d625b5409e122ac1b4fc1021dae31137.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 600;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-754a01768e04a2bb443232ef2819cf13c098e35b.eot");
+  src: url("../font/ttnorms-757aabc5926a80c1804b042f44d62756d34239ab.woff2") format("woff2"), 
+    url("../font/ttnorms-9bfc4e66e60ed8e1fff552b835af996506bac436.woff") format("woff"), 
+    url("../font/ttnorms-754a01768e04a2bb443232ef2819cf13c098e35b.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-6f3a90aec68a4445026ad73a364deeef400698f7.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 700;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-f2c682628a7fde5fbfa782794afbf262cd18b3f4.eot");
+  src: url("../font/ttnorms-b629b0bc5476ecfea1f4bf7790ac8b3bbfed5a32.woff2") format("woff2"), 
+    url("../font/ttnorms-4864e44441d47e6393e5fb2e2a32262e2e72793e.woff") format("woff"), 
+    url("../font/ttnorms-f2c682628a7fde5fbfa782794afbf262cd18b3f4.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-b69906fb96b9e7ee7b3cdfb2d60a25435560aad2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 800;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-86355ffb52766a4da6fe80c3576e7ffd573f147a.eot");
+  src: url("../font/ttnorms-b349fff1c3347ce90534fea0c691ab4b038799ec.woff2") format("woff2"), 
+    url("../font/ttnorms-bb33c83cce9d12587d8d526f4bcfd91e6e5489e0.woff") format("woff"), 
+    url("../font/ttnorms-86355ffb52766a4da6fe80c3576e7ffd573f147a.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-8e108991086c59e04c4d18c505c9047d116dbbb3.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: italic;
+  font-weight: 900;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-5f384342726d50e724c3df18d7438be682640c55.eot");
+  src: url("../font/ttnorms-f79cc4b6e550512a3cfeb1bcd209e878b01d565f.woff2") format("woff2"), 
+    url("../font/ttnorms-205e6fb3490938638d13baf5e58ae1d6d19ecf2b.woff") format("woff"), 
+    url("../font/ttnorms-5f384342726d50e724c3df18d7438be682640c55.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-bb6124a61f343d7924a798e2768e5be6782763e0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 100;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-b5afb199e92868f2fd5f03086e0bb04c32dbc7fa.eot");
+  src: url("../font/ttnorms-c2d6f966356c767c0c2f45ff5055d281126d91bc.woff2") format("woff2"), 
+    url("../font/ttnorms-dcb5d118e513e15800ddd6fd2c8e032ccd7d8821.woff") format("woff"), 
+    url("../font/ttnorms-b5afb199e92868f2fd5f03086e0bb04c32dbc7fa.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-9fdef921bd272c974074987d6aaf131254fa4230.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 200;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-b5afb199e92868f2fd5f03086e0bb04c32dbc7fa.eot");
+  src: url("../font/ttnorms-c2d6f966356c767c0c2f45ff5055d281126d91bc.woff2") format("woff2"), 
+    url("../font/ttnorms-dcb5d118e513e15800ddd6fd2c8e032ccd7d8821.woff") format("woff"), 
+    url("../font/ttnorms-b5afb199e92868f2fd5f03086e0bb04c32dbc7fa.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-9fdef921bd272c974074987d6aaf131254fa4230.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 300;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-009ecdc18801374203641b7c65f9562b43ee75f0.eot");
+  src: url("../font/ttnorms-02dfd87eef460724e5729faa0b37cecee4c6d8d9.woff2") format("woff2"), 
+    url("../font/ttnorms-b0ca10ee021206c6fb61c26314cd3f02e941027d.woff") format("woff"), 
+    url("../font/ttnorms-009ecdc18801374203641b7c65f9562b43ee75f0.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-b4cf378ad913c338bfcd4e5bff672ccdaa3847ce.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 400;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-f79e916e13747ec0ebb37e839efa60c74511ff32.eot");
+  src: url("../font/ttnorms-84c69b852e4542f61b4a3023a4f85541e217847e.woff2") format("woff2"), 
+    url("../font/ttnorms-b58e60e223fc335b6c23b84ffd6bc66c7b801c72.woff") format("woff"), 
+    url("../font/ttnorms-f79e916e13747ec0ebb37e839efa60c74511ff32.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-b18f1b451549c3f02668711d9c79d37ac03ae2ba.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-504f44f860a66255903b4a2fb402491c7f1e1daa.eot");
+  src: url("../font/ttnorms-85715d3ae1173c7341e97846c88a700da3469fb4.woff2") format("woff2"), 
+    url("../font/ttnorms-45d4977751b6677f758817988a3221da2114fa3f.woff") format("woff"), 
+    url("../font/ttnorms-504f44f860a66255903b4a2fb402491c7f1e1daa.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-91b0ec2a271fd881e0af79b7801167de107f4af3.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 600;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-c4fb8e7522d495257135e8fa41dbcebbe57c7112.eot");
+  src: url("../font/ttnorms-2cbe36a4a2592f043c8d77ab3f55bc2a7bee4f7e.woff2") format("woff2"), 
+    url("../font/ttnorms-20058528e06056754810bc23a3b2ba775869480f.woff") format("woff"), 
+    url("../font/ttnorms-c4fb8e7522d495257135e8fa41dbcebbe57c7112.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-53d3a440880416431353e4d1ab0bf493ad683f26.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 700;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-8cd43906ed46f70b6a671ad65ad506faa331567f.eot");
+  src: url("../font/ttnorms-5bd3a20a155d8ebe39b903e21a57a75f41016890.woff2") format("woff2"), 
+    url("../font/ttnorms-bb8bdff3ac58aa2dc98f436f74f2591bc5813143.woff") format("woff"), 
+    url("../font/ttnorms-8cd43906ed46f70b6a671ad65ad506faa331567f.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-0ee69bb8f41be6c339e05c2064f495defbbb0edb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 800;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-36b1d787569ebd20469331b2801cde0dae4d03d6.eot");
+  src: url("../font/ttnorms-20a586da4f0469d6325813ae9d438a3b0b509a24.woff2") format("woff2"), 
+    url("../font/ttnorms-71f145883230f6db48562f8ab8874663b92c012e.woff") format("woff"), 
+    url("../font/ttnorms-36b1d787569ebd20469331b2801cde0dae4d03d6.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-5ebc97a1ea1887231ea2f8711e52f5faffe9054d.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 900;
+  /* IE6-8 compat */
+  src: url("../font/ttnorms-04be59a1ae68b5c60dd3082da778e95419775e55.eot");
+  src: url("../font/ttnorms-583592c3053139fb9517d1cd7aebaa5f844b761e.woff2") format("woff2"), 
+    url("../font/ttnorms-0be1b8ff68291837a46f5ae672edde3238e5e5bd.woff") format("woff"), 
+    url("../font/ttnorms-04be59a1ae68b5c60dd3082da778e95419775e55.eot") format("embedded-opentype"), 
+    url("../font/ttnorms-efb6875bafbc30a13b1a0010ae9939d71bf6e0fe.ttf") format("truetype");
+}
+
