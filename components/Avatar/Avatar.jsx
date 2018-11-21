@@ -8,7 +8,7 @@ const Avatar = ({ innerText, imageSrc, ...rest }) => {
   const image = imageSrc || defaultAvatar;
   return (
     innerText ? (
-      <AvatarWrapper {...rest}>
+      <AvatarWrapper {...rest} innerText={innerText}>
         {innerText}
       </AvatarWrapper>
     ) : (
