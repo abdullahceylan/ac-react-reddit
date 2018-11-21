@@ -2,6 +2,17 @@
 
 A Reddit client built with [React.js](https://github.com/facebook/react), [next.js](https://github.com/zeit/next.js) and [styled-components](https://github.com/styled-components/styled-components).</p> I've used [this Reddit design concept](https://dribbble.com/shots/4573375-New-Reddit-design-for-web) which is designed by Hernan Vionnet.
 
+## Preview
+
+### Post details
+![Preview](https://i.gyazo.com/2d308150f53fd1dda31678d2d1b0e2a0.gif)
+
+### Load more
+![Preview](https://i.gyazo.com/8008e3910370f8f21b5848ad7700fd05.gif)
+
+### Subreddit
+![Preview](https://i.gyazo.com/48279609d57eb118bd3846e325b8461c.gif)
+
 ## Running Locally
 
 1. Clone this repo
