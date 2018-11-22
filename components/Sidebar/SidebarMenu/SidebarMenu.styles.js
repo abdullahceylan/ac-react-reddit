@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import {ifProp } from 'styled-tools';
+import { ifProp } from 'styled-tools';
 
 export const MenuItems = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ export const Item = styled.span`
     color: ${props => props.theme.colors.orange};
   }
 
-  ${ifProp({ active: true }, css`
+  ${ifProp({ isActive: true }, css`
     color: ${props => props.theme.colors.orange};
   `)}
 `;

@@ -9,7 +9,9 @@ const SingleItem = ({ item, active }) => (
 );
 
 SingleItem.propTypes = {
-  item: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  item: PropTypes.oneOfType([
+    PropTypes.object,
+  ]).isRequired,
   active: PropTypes.bool,
 };
 

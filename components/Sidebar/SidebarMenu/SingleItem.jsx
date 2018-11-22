@@ -1,15 +1,31 @@
 import React from 'react';
-import Link from 'next/link';
-import Router from 'next/router';
+import PropTypes from 'prop-types';
 import { Item } from './SidebarMenu.styles';
 
-const SingleItem = ({ item, active, router, onClick }) => {
+const SingleItem = ({ item, isActive, onClick }) => {
+  if (!item) {
+    return null;
+  }
+
   return (
-    <Item active={active} onClick={() => onClick(item.id)}>
+    <Item isActive={isActive} onClick={() => onClick(item.id)}>
       {item.icon}
       {item.title}
     </Item>
   );
+};
+
+SingleItem.propTypes = {
+  item: PropTypes.oneOfType([
+    PropTypes.object,
+  ]).isRequired,
+  isActive: PropTypes.bool,
+  onClick: PropTypes.func,
+};
+
+SingleItem.defaultProps = {
+  isActive: false,
+  onClick: () => {},
 };
 
 export default SingleItem;

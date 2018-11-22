@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import {
@@ -12,17 +12,15 @@ import {
 } from 'react-icons/md';
 import PostInformation from './PostInformation';
 import ExpandedCardContent from './CardExpandedContent';
-import { timeFromNow, regexFilters } from '../../../helpers';
+import { regexFilters } from '../../../helpers';
 import { ActionsBar, ActionItem } from '../../styles';
 import {
   CardContainer,
   ContentArea,
   DetailsRow,
-  Information,
   ContentRow,
   ContentTitle,
   ContentDetails,
-  ContentText,
   ContentImage,
   ContentNoImage,
   VotingArea,
