@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Avatar from '../../Avatar';
 import {
   Contributor,
+  Content,
 } from './Contributors.styles';
 
 const ContributorItem = ({ item }) => {

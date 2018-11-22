@@ -27,7 +27,7 @@ const activitiesArr = [
     },
   },
   {
-    id: 1,
+    id: 3,
     content: 'The group assignment starterpack',
     details: {
       points: '16.4k',

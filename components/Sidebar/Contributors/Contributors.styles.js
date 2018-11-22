@@ -13,3 +13,9 @@ export const ContributorList = styled.div`
 export const Contributor = styled.div`
 
 `;
+
+export const Content = styled.div`
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 22px;
+`;
