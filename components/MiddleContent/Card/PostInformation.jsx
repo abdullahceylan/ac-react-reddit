@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import distanceInWordsToNow from 'date-fns/distance_in_words_to_now';
 import Router from 'next/router';
 import Avatar from '../../Avatar';
-import { getSubredditInfo, timeFromNow } from '../../../helpers';
+import { getSubredditInfo } from '../../../helpers';
 import { contentActions } from '../../../actions';
 import { Information, PostSubreddit } from './Card.styles';
 
@@ -28,6 +29,8 @@ const PostInformation = ({
     Router.push(`/?subredditName=${post.subreddit}`, href, { shallow: true });
   }
 
+  const timeAgo = distanceInWordsToNow(post.created_utc * 1000);
+
   return (
     <Information>
       { showAvatar && <Avatar width={24} inlineBlock imageSrc={avatarImage} /> }
@@ -35,7 +38,7 @@ const PostInformation = ({
         <PostSubreddit onClick={onClick}>
           {post.subreddit_name_prefixed} ・ 
         </PostSubreddit>)
-      }Posted by {post.author} ・ {timeFromNow(post.created)} ago
+      }Posted by {post.author} ・ {timeAgo}
     </Information>
   )
 }
