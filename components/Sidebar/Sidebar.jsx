@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import SidebarMenu from './SidebarMenu';
 import SidebarSection from './SidebarSection';
 import Contributors from './Contributors';
@@ -20,16 +19,6 @@ const Sidebar = () => {
       </SidebarSection>
     </SidebarWrapper>
   );
-};
-
-Sidebar.propTypes = {
-  pageParams: PropTypes.oneOfType([
-    PropTypes.object,
-  ]),
-};
-
-Sidebar.defaultProps = {
-  pageParams: {},
 };
 
 export default Sidebar;

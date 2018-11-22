@@ -22,22 +22,22 @@ const menuList = [
   },
 ];
 
-const HeaderMenu = ({ active }) => (
+const HeaderMenu = ({ activeItem }) => (
   <MenuItems>
     {
       menuList.length > 0 && menuList.map(item => (
-        <SingleItem key={`headerMenu_${item.id}`} active={active === item.id} item={item} />
+        <SingleItem key={`headerMenu_${item.id}`} active={activeItem === item.id} item={item} />
       ))
     }
   </MenuItems>
 );
 
 HeaderMenu.propTypes = {
-  active: PropTypes.string,
+  activeItem: PropTypes.string,
 };
 
 HeaderMenu.defaultProps = {
-  active: 'popular',
+  activeItem: 'popular',
 };
 
 export default HeaderMenu;

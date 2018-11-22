@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'next/router';
 import {
   FaHotjar, FaRegListAlt, FaRegChartBar,
-  FaTrophy, FaRegStar, FaRegNewspaper, FaRegHeart,
+  FaTrophy, FaRegStar, FaRegNewspaper,
 } from 'react-icons/fa';
 import { contentActions } from '../../../actions';
 import SingleItem from './SingleItem';
@@ -69,7 +69,7 @@ class SidebarMenu extends React.PureComponent {
       <MenuItems>
         {
           menuList.length > 0 && menuList.map(item => (
-            <SingleItem key={`sidebarMenu_${item.id}`} active={currentType === item.id} item={item} onClick={this.onClickItem} />
+            <SingleItem key={`sidebarMenu_${item.id}`} isActive={currentType === item.id} item={item} onClick={this.onClickItem} />
           ))
         }
       </MenuItems>

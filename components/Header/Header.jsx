@@ -7,12 +7,12 @@ import {
 } from './Header.styles';
 import LogoImage from '../../static/assets/images/reddit_logo.svg';
 
-const Header = (props) => (
+const Header = () => (
   <HeaderWrapper>
     <Logo>
       <LogoImage />
     </Logo>
-    <HeaderMenu active="popular" />
+    <HeaderMenu activeItem="popular" />
     <ActionsMenu />
   </HeaderWrapper>
 );

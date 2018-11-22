@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { isEmpty, last } from 'lodash/fp';
+import { last } from 'lodash/fp';
 import YTPlayer from 'react-youtube';
 import Markdown from 'react-markdown';
-import { regexFilters } from '../../../helpers';
+import { regexFilters } from '../../../../helpers';
 import {
   DetailContent,
   DetailImage,
-} from './Card.styles';
+} from '../Card.styles';
 
 const expandedContent = ({ item, expanded }) => {
   // if (expanded) {

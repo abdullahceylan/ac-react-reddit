@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components';
-import {ifProp } from 'styled-tools';
+import styled from 'styled-components';
 
 export const ActionsMenuWrapper = styled.div`
   display: flex;

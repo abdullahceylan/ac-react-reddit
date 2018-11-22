@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Link from 'next/link';
 import Router from 'next/router';
 import Avatar from '../../Avatar';
 import { getSubredditInfo, timeFromNow } from '../../../helpers';

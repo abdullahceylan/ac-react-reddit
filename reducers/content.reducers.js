@@ -53,8 +53,6 @@ const contentReducer = (state = contentInitialState, action) => {
       let post = has(action.itemName, state.model) && state.model[action.itemName];
       const itemIndex = state.items.indexOf(item);
 
-      // console.log('post', post);
-
       let isExpanded = true;
       if (item.data.isExpanded) {
         isExpanded = false;

@@ -1,42 +1,49 @@
 import React from 'react';
-import Avatar from '../../Avatar';
+import PropTypes from 'prop-types';
+import { take, map } from 'lodash/fp';
+import ActivityItem from './ActivityItem';
 import {
   ActivityWrapper,
   ActivityList,
-  Activity,
-  Content,
-  Details,
-  Points,
-  Comments,
   BlurEffect,
   ViewAll,
 } from './Activities.styles';
 
+const activitiesArr = [
+  {
+    id: 1,
+    content: 'The group assignment starterpack',
+    details: {
+      points: 8287,
+      comments: 135,
+    },
+  },
+  {
+    id: 2,
+    content: 'Supposedly extinct kangaroo rat resurfaces after 30 years',
+    details: {
+      points: 12,
+      comments: 3,
+    },
+  },
+  {
+    id: 1,
+    content: 'The group assignment starterpack',
+    details: {
+      points: '16.4k',
+      comments: 135,
+    },
+  },
+];
+
 const Activities = ({ count }) => {
+  const activityList = take(count, activitiesArr);
   return (
     <ActivityWrapper>
       <ActivityList>
-        <Activity>
-          <Content>The group assignment starterpack</Content>
-          <Details>
-            <Points>8287 points</Points>
-            <Comments>135 comments</Comments>
-          </Details>
-        </Activity>
-        <Activity>
-          <Content>Supposedly extinct kangaroo rat resurfaces after 30 years</Content>
-          <Details>
-            <Points>12 points</Points>
-            <Comments>3 comments</Comments>
-          </Details>
-        </Activity>
-        <Activity>
-          <Content>The group assignment starterpack</Content>
-          <Details>
-            <Points>16.4K points</Points>
-            <Comments>235 comments</Comments>
-          </Details>
-        </Activity>
+        {
+          map(item => <ActivityItem key={item.id} activity={item} />, activityList)
+        }
         <BlurEffect />
       </ActivityList>
       <ViewAll>+ View All</ViewAll>
@@ -44,4 +51,12 @@ const Activities = ({ count }) => {
   )
 }
 
-export default Activities
+Activities.propTypes = {
+  count: PropTypes.number,
+};
+
+Activities.defaultProps = {
+  count: 3,
+};
+
+export default Activities;
