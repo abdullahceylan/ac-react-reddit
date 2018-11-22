@@ -10,7 +10,7 @@
     "dev:next": "next",
     "build": "export NODE_ENV=production; next build",
     "start": "export NODE_ENV=production; node server.js",
-    "start:next": "next start",
+    "start:next": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
