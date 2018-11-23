@@ -1,5 +1,5 @@
 import { contentConstants } from '../constants';
-import { find, has } from 'lodash/fp';
+import { find, has, reject } from 'lodash/fp';
 import { normalizePosts, allCollection } from '../helpers';
 
 const contentInitialState = {
@@ -124,8 +124,6 @@ const subRedditsReducer = (state = subRedditListInitialState, action) => {
 }
 
 const postCommentsInitialState = {
-  model: {},
-  allNames: [],
   fetching: false,
 };
 
@@ -137,14 +135,11 @@ const postCommentsReducer = (state = postCommentsInitialState, action) => {
         fetching: true,
       }
     case contentConstants.GET_POST_COMMENTS_SUCCESS:
+      const postComments = reject(item => item.kind === 'more', action.data.children);
       return {
         ...state,
         fetching: false,
-        model: {
-          ...state.model,
-          ...normalizePosts(action.data.children, 'name'),
-          allNames: allCollection(action.data.children, 'name'),
-        },
+        [action.item.name]: normalizePosts(postComments),
       }
       case contentConstants.GET_POST_COMMENTS_FAILURE:
       return {

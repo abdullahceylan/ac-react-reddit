@@ -157,7 +157,7 @@ export const loadMoreSubRedditItems = (params = {}) => {
 
 export const fetchPostComments = (item) => {
   const request = data => ({ type: contentConstants.GET_POST_COMMENTS_REQUEST, data });
-  const success = data => ({ type: contentConstants.GET_POST_COMMENTS_SUCCESS, data });
+  const success = (data, item) => ({ type: contentConstants.GET_POST_COMMENTS_SUCCESS, data, item });
   const failure = error => ({ type: contentConstants.GET_POST_COMMENTS_FAILURE, error });
 
   return (dispatch) => {
@@ -172,7 +172,7 @@ export const fetchPostComments = (item) => {
       .then(
         (json) => {
           console.log('fetchPostComments.data', json);
-          dispatch(success(json[1].data));
+          dispatch(success(json[1].data, item));
         },
         (error) => {
           dispatch(failure(error));
