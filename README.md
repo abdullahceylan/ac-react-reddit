@@ -30,3 +30,6 @@ A Reddit client built with [React.js](https://github.com/facebook/react), [next.
 You can test on https://ac-react-reddit.herokuapp.com
 
 ## To-Do
+
+- [ ] Create tests
+- [ ] Re-organize component tree
