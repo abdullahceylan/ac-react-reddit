@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { has } from 'lodash/fp';
 import {
   MdFavoriteBorder,
   MdMoreVert,
@@ -32,12 +33,21 @@ class DetailsCard extends PureComponent {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.currentModalItem !== nextProps.currentModalItem) {
+      if (nextProps.currentModalItem) {
+        this.props.fnFetchPostComments(nextProps.currentModalItem);
+      }
+    }
+  }
+
   render() {
     const { currentModalItem } = this.props;
     if (!currentModalItem) {
       return null;
     }
     const singleItem = currentModalItem;
+    const itemComments = has(singleItem.name, this.props.comments) ? this.props.comments[singleItem.name] : [];
 
     return (
       <CardContainer direction="column">
@@ -64,7 +74,7 @@ class DetailsCard extends PureComponent {
             <ActionItem><MdLabelOutline /> {singleItem.domain}</ActionItem>
           </ActionsBar>
         </ContentArea>
-        { !this.props.comments.fetching && <Comments list={this.props.comments} />}
+        { !this.props.comments.fetching && <Comments list={itemComments} />}
       </CardContainer>
     );
   }

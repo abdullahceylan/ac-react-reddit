@@ -9,11 +9,10 @@ import { 
 } from '../Card.styles';
 
 const PostComments = ({ list }) => {
-  if (!list.model) {
+  if (!list) {
     return null;
   }
 
-  const { model } = list;
   return (
     <CommentsArea>
       {map(comment => (
@@ -26,7 +25,7 @@ const PostComments = ({ list }) => {
             />
           </CommentBody>
         </Comment>
-    ), model) }
+    ), list) }
     </CommentsArea>
   )
 };

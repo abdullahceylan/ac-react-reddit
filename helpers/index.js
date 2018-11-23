@@ -1,4 +1,4 @@
-import { has } from 'lodash/fp';
+import { has, map } from 'lodash/fp';
 
 export const convertHex = (hex, opacity = 100) => {
   const newHex = hex.replace('#','');
@@ -18,18 +18,18 @@ export const regexFilters = {
 
 export const normalizePosts = (arr, baseKey = 'name') => {
   const d = {};
-  arr.map((post, index) => {
+  map.convert({cap: false})((post, index) => {
     const key = post.data[baseKey];
     d[key] = d[key] || {};
     d[key] = {
       ...arr[index].data,
     }
-  });
+  }, arr);
 
   return d;
 }
 
-export const allCollection = (arr, baseKey = 'name') => arr.map(post => post.data[baseKey]);
+export const allCollection = (arr, baseKey = 'name') => map(post => post.data[baseKey], arr);
 
 
 export const getSubredditInfo = (list = {}, id, key = '') => {

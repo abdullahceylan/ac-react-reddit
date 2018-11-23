@@ -74,6 +74,8 @@ class MiddleContent extends React.PureComponent {
       currentModalItem: null,
     });
 
+    this.props.fnSetModalItem(null);
+
     router.replace(`/?${prevPath}`, prevPath, { shallow: true });
   };
 
