@@ -19,7 +19,7 @@ const ActionsMenu = ({ active }) => (
       <Avatar margin="15px" />
       <UserInfo>
         <Name>Abdullah Ceylan</Name>
-        <Email>abdullah@creativouse.co.uk</Email>
+        <Email>abdullah@crea****e.co.uk</Email>
       </UserInfo>
     </ProfileSection>
   </ActionsMenuWrapper>
