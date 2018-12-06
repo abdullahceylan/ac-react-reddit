@@ -6,6 +6,7 @@ A Reddit client built with [React.js](https://github.com/facebook/react), [next.
 
 ### Post details
 ![Preview](https://i.gyazo.com/2d308150f53fd1dda31678d2d1b0e2a0.gif)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fabdullahceylan%2Fac-react-reddit.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fabdullahceylan%2Fac-react-reddit?ref=badge_shield)
 
 ### Load more
 ![Preview](https://i.gyazo.com/8008e3910370f8f21b5848ad7700fd05.gif)
@@ -33,3 +34,7 @@ You can test on https://ac-react-reddit.herokuapp.com
 
 - [ ] Create tests
 - [ ] Re-organize component tree
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fabdullahceylan%2Fac-react-reddit.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fabdullahceylan%2Fac-react-reddit?ref=badge_large)
