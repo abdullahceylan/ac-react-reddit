@@ -11,7 +11,9 @@
     "build": "export NODE_ENV=production; next build",
     "start": "export NODE_ENV=production; node server.js",
     "start:next": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -37,7 +39,8 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.0.3",
-    "styled-tools": "^1.6.0"
+    "styled-tools": "^1.6.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^1.0.1",
@@ -45,5 +48,6 @@
     "babel-plugin-styled-components": "^1.8.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "redux-logger": "^3.0.6"
-  }
+  },
+  "snyk": true
 }
