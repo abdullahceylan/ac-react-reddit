@@ -24,7 +24,7 @@
     "date-fns": "^1.29.0",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
-    "next": "^7.0.2",
+    "next": "^9.3.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
     "react-content-loader": "^3.2.0",
